@@ -5,7 +5,7 @@ import "testing"
 func TestInit(t *testing.T) {
 	stack := New[int](1, 2, 3, 4)
 
-	if stack.Size() != 4 && !stack.IsEmpty() {
+	if stack.Size != 4 && !stack.IsEmpty() {
 		t.Error("TestStackInit: Init not working")
 	}
 
@@ -16,7 +16,7 @@ func TestPop(t *testing.T) {
 	stack := New[int](2, 5, 7, 8)
 	got := stack.Pop()
 
-	if got != 8 && stack.Size() != 3 {
+	if got != 8 && stack.Size != 3 {
 		t.Error("TestStackPop: returns the last inserted data and removes it from the stack")
 	}
 
@@ -53,7 +53,7 @@ func TestPeek(t *testing.T) {
 func TestSize(t *testing.T){
 Stack:=New[string]()
 
-if Stack.Size()!=0{
+if Stack.Size!=0{
 	t.Error("Test Size method incorrect size")
 }
 }
