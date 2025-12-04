@@ -1,10 +1,17 @@
 package main
 
 import (
-	"fair-money/binary"
+	"fair-money/stack"
 	"fmt"
 )
 
 func main() {
-	fmt.Println(binary.BinarySearch([]int{1, 2, 3, 4, 5},5))
+	tasks := stack.New[string]("go to bank", "wash clothes", "cook")
+	tasks.Push("go to the hospital")
+	tasks.Pop()
+
+	fmt.Println(tasks.Size())
+	fmt.Println(tasks.Peek())
+	fmt.Println(tasks)
+
 }

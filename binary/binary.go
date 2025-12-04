@@ -25,5 +25,4 @@ func BinarySearch(arr []int, search int) int {
 	}
 	return -1
 }
-// 1,2,3,4,5 
-// 1
+// 0(logn)

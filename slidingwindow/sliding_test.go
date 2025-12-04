@@ -1,5 +1,8 @@
 package slidingwindow
 
-import "testing"
+import (
+	"testing"
+)
 
-func TestSliding(t *testing.T) {}
+func TestSliding(t *testing.T) {
+}
