@@ -1,14 +1,11 @@
 package main
 
 import (
-	"fair-money/queue"
+	"fair-money/mergesort"
 	"fmt"
 )
 
 func main() {
-jobs:=queue.New[string]()
-jobs.Enqueue("task start node")
-jobs.Enqueue("npm install")
-jobs.Enqueue("npm run")
-fmt.Println(jobs.Peek())
+	fmt.Println(mergesort.Sort[int](5,3,1))
+
 }
