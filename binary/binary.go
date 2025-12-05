@@ -1,7 +1,5 @@
 package binary
 
-import "math"
-
 func BinarySearch(arr []int, search int) int {
 
 	left := 0
@@ -9,7 +7,7 @@ func BinarySearch(arr []int, search int) int {
 	var mid int
 
 	for left <= right {
-		mid = int(math.Floor(float64((left + right)) / 2))
+		mid = left + right/2
 
 		midValue := arr[mid]
 
@@ -25,4 +23,5 @@ func BinarySearch(arr []int, search int) int {
 	}
 	return -1
 }
+
 // 0(logn)
