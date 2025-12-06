@@ -1,6 +1,6 @@
 package queue
 
-import "fair-money/linkedlist"
+import "DSA/linkedlist"
 
 type Queue[T any] struct {
 	linkedlist *linkedlist.LinkedList[T]

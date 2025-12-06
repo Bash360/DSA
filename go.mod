@@ -1,4 +1,4 @@
-module fair-money
+module DSA
 
 go 1.25.0
 
