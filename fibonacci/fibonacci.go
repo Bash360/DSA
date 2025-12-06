@@ -1,13 +1,13 @@
 package fibonacci
 
 func Fibonacci(num int) int {
-	num1 := 0
-	num2 := 1
+	left := 0
+	right := 1
 	var result int
 	for range num - 1 {
-		result = num1 + num2
-		num1 = num2
-		num2 = result
+		result = left + right
+		left = right
+		right = result
 
 	}
 
@@ -15,4 +15,15 @@ func Fibonacci(num int) int {
 
 }
 
-// 0(n)
+func FibRecursion(num int) int {
+	if num == 0 {
+		return 0
+	}
+
+	if num == 1 {
+		return 1
+	}
+
+	return FibRecursion(num-2) + FibRecursion(num-1)
+
+}
