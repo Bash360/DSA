@@ -7,10 +7,9 @@ func BinarySearch(arr []int, search int) int {
 	var mid int
 
 	for left <= right {
-		mid = left + right/2
+		mid = (left + right) / 2
 
 		midValue := arr[mid]
-
 		switch {
 		case search > midValue:
 			left = mid + 1
